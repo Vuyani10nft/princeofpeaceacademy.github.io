@@ -1,0 +1,296 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #dda0dd; /* Lavender */
+    color: #fff;
+    padding: 10px 0;
+    position: fixed; /* Fixes the header at the top */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays on top of other content */
+    transition: none; /* Remove transition effects */
+}
+
+header.scrolled {
+    transform: none; /* Ensure no transformation */
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.nav-toggle span {
+    background: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 5px 0;
+    border-radius: 3px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em; /* Adjust font size for visibility */
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://z-p3-scontent.fcpt1-1.fna.fbcdn.net/v/t39.30808-6/294447557_462508249219726_5350583642401012709_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=qjNVVnr4QbcQ7kNvgFzLY49&_nc_zt=23&_nc_ht=z-p3-scontent.fcpt1-1.fna&_nc_gid=ASoaZ0a07zK5oVmBH5-Xrmn&oh=00_AYCo4KBs5M1DX9OKGkgwMStJrNnUm5URHyvMu4FB8WBgMA&oe=66D20A17') no-repeat center center;
+    background-size: contain; /* Make sure the entire image is visible */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    height: 100vh; /* Ensure the hero section takes the full viewport height */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px; /* Add some padding for better spacing */
+}
+
+/* Hero Content */
+.hero-content h2 {
+    font-size: 3em; /* Adjust font size if needed */
+    margin-bottom: 20px;
+    color: #000; /* Darker text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Stronger shadow for better visibility */
+}
+
+.hero-content p {
+    font-size: 1.2em; /* Adjust font size if needed */
+    color: #000; /* Darker text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Stronger shadow for better visibility */
+}
+
+.cta-button {
+    background: #ff69b4; /* Pink */
+    color: #fff;
+    padding: 15px 25px; /* Slightly larger button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5em; /* Increased font size */
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff1493; /* Darker Pink */
+}
+
+/* Courses Section */
+.courses, .about, .contact {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #ff69b4; /* Pink */
+}
+
+.course {
+    margin-bottom: 20px;
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    color: #333;
+}
+
+/* Brochure Section */
+.brochure {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.brochure h2 {
+    font-size: 2.5em;
+    color: #ff69b4; /* Pink */
+    margin-bottom: 20px;
+}
+
+.brochure p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.brochure-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Us Section */
+.contact form {
+    margin: 20px auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form input, .contact form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background: #ff69b4; /* Pink */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #ff1493; /* Darker Pink */
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background: #c0c0c0; /* Silver */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.social-links {
+    margin-bottom: 10px;
+}
+
+.social-link {
+    margin: 0 15px;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-link img {
+    width: 50px; /* Larger size */
+    height: 50px; /* Larger size */
+    transition: filter 0.3s ease;
+}
+
+.social-link:hover img {
+    filter: hue-rotate(180deg); /* Lavender hover effect */
+}
+
+.social-link span {
+    display: block;
+    margin-top: 5px;
+    font-size: 1em; /* Text size */
+}
+
+.social-link:hover {
+    color: #dda0dd; /* Lavender text color */
+}
+
+/* Responsive Styles */
+@media (max-width: 68px) {
+    /* Navigation Links */
+    .nav-links {
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        right: 0; /* Align to the right */
+        background: #dda0dd; /* Lavender */
+        width: 100%; /* Full width on smaller screens */
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 10px; /* Add padding for better spacing */
+        box-sizing: border-box; /* Include padding in width */
+        z-index: 999; /* Ensure it's on top of other content */
+    }
+
+    /* Show navigation links when active */
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Navigation List Items */
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center; /* Center align text */
+    }
+
+    /* Toggle Button */
+    .nav-toggle {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        z-index: 1000; /* Ensure it's on top of other content */
+    }
+
+    .nav-toggle span {
+        background: #fff;
+        height: 3px;
+        width: 25px;
+        margin: 5px 0;
+        border-radius: 3px;
+    }
+
+    /* Hero Section Adjustments */
+    .hero {
+        background-size: contain; /* Make sure the entire image is visible */
+        background-position: center; /* Center the image */
+        height: 100vh; /* Ensure the hero section takes the full viewport height */
+    }
+
+    .hero-content h2 {
+        font-size: 2em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+    }
+
+    /* Ensure Header Scrolled Effect Doesn't Apply */
+    header.scrolled {
+        transform: none; /* Ensure no transformation */
+    }
+}
