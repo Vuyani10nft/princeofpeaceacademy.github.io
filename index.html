@@ -7,7 +7,6 @@
     <meta name="keywords" content="Matric Upgrade, Matric Finishing, Extra Classes, NSC Curriculum, South Africa">
     <title>Prince of Peace Academy - Empowering Success</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/png">
 </head>
 <body>
     <!-- Header -->
@@ -16,14 +15,15 @@
     <nav>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#courses">Services & Pricing</a></li>
             <li><a href="#brochure">Brochure</a></li>
+            <li><a href="#courses">Services & Pricing</a></li>
             <li><a href="#about">About Us</a></li>
-            <li><a href="https://wa.me/+27817066430" target="_blank">OurWhatsApp</a></li>
+            <li class="whatsapp-item">
+                <a href="https://wa.me/+27817066430" target="_blank" class="whatsapp-link">WhatsApp Us Now</a>
+            </li>
         </ul>
     </nav>
 </header>
-
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -34,53 +34,75 @@
         </div>
     </section>
 
-    <!-- Courses Section -->
-    <section id="courses" class="courses">
-        <h2>Our Services & Pricing</h2>
-        <div class="course">
-            <h3>Matric Upgrade Classes</h3>
-            <p>Price: R450 per subject (R150 extra for each additional subject)</p>
-        </div>
-        <div class="course">
-            <h3>Matric Finishing Classes</h3>
-            <p>Price: R450 per subject (R150 extra for each additional subject)</p>
-        </div>
-        <div class="course">
-            <h3>Extra Classes</h3>
-            <p>Price: R450 per subject (R150 extra for each additional subject)</p>
-        </div>
-    </section>
 
     <!-- Brochure Section -->
     <section id="brochure" class="brochure">
         <h2>Our Brochure</h2>
         <p>Explore our full range of offerings in the brochure below.</p>
-        <img src="President.jpg" alt="Brochure Image" class="brochure-image"> <!-- Placeholder Image -->
+        <img src="https://z-p3-scontent.fcpt1-1.fna.fbcdn.net/v/t39.30808-6/416882670_840568601413687_6009826140684144546_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=95ShU8XHpk0Q7kNvgElpglj&_nc_zt=23&_nc_ht=z-p3-scontent.fcpt1-1.fna&oh=00_AYAKEowZ41CUcIWymcUoc_U4pa7ARAchxqt6Cld9ODJkAw&oe=66D2031E" alt="Brochure Image" class="brochure-image"> <!-- Placeholder Image -->
     </section>
-
+   <!-- Courses Section -->
+   <section id="courses" class="courses">
+    <h2>Our Services & Pricing</h2>
+    <div class="course">
+      <h3>Click Here to see available subjects and the price</h3>
+       <!-- Add this button below the pricing details -->
+    <a href="cost-calculator.html" class="cta-button">Estimated Cost Calculator</a>
+</section>
+     <!-- Banking Details -->
+    <section id="banking-details">
+        <h2>Our Banking Details</h2>
+        <p>Please use the following details to make your payment. Ensure you include the reference as indicated.</p>
+        <p><strong>BANK:</strong> FIRST NATIONAL BANK</p>
+        <p><strong>NAME:</strong> PRINCE OF PEACE ACADEMY</p>
+        <p><strong>ACCOUNT N:</strong> 628 7385 2323</p>
+        <p><strong>BRANCH:</strong> MDANTSANE CITY</p>
+        <p><strong>BRANCH CODE:</strong> 260210</p>
+        <p><strong>Ref:</strong> Learner’s Surname with grade (e.g., Mfuko grade 11)</p>
+    </section>
     <!-- About Us Section -->
     <section id="about" class="about">
-        <h2>About Us</h2>
-        <p>Prince of Peace Academy is dedicated to providing quality education for students looking to upgrade their matric results, finish their matric, or take extra classes. Our experienced staff is committed to helping each student achieve their academic goals.</p>
-    </section>
+    <h2>About Us</h2>
+    <p>
+        <strong>PRINCE OF PEACE ACADEMY PROFILE</strong><br>
+        The institution was established on September 9, 2020, in Mdantsane City in the Eastern Cape Province of the Republic of South Africa.<br><br>
+        Prince of Peace Academy is a non-governmental entity aimed at providing extra tuition to assist learners struggling with major subjects at the basic education level. Our target market is learners around Mdantsane and its environs.<br><br>
+        We assist learners at both the GET and the FET phases. Prince of Peace Academy focuses on providing the best extra tuition to learners of all kinds, respecting the Bills of Rights of the South African constitution.<br><br>
+        Knowing the disheartening pass rate of the learners around Mdantsane and the Eastern Cape, it has become necessary to assist in addressing this issue. Hence, the establishment of Prince of Peace Academy. We have therefore come to provide our quota to help learners improve their results/grades.
+    </p>
+
+    <h3>VISION :</h3>
+    <p>
+        Our vision is to develop well-rounded, confident, and responsible individuals who aspire to achieve their full potential. We aim to empower students to acquire, demonstrate, articulate, and value knowledge and skills that will support them as life-long learners, enabling them to participate in and contribute to the global world. We encourage practicing the core values of respect, tolerance & inclusion, and excellence.
+    </p>
+
+    <h3>MISSION :</h3>
+    <p>
+        Our mission is to work together to build a safe, respectful, and nurturing environment focused on maximizing each child’s sense of well-being and acquisition of skills for life and learning. The academy also strives to provide exceptional care to learners while fostering each child’s intellectual, social, physical, and moral development in an academically rich environment.
+    </p>
+</section>
 
     <!-- Contact Us Section -->
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-        <div class="contact-info">
-            <p>Address: 123 Academy Street, East London, South Africa</p>
-            <p>Email: <a href="mailto:princeofpeaceacademy20@gmail.com">princeofpeaceacademy20@gmail.com</a></p>
+    <section class="contact">
+    <h2>Contact Us</h2>
+    <p>You can talk to us on our WhatsApp:</p>
+    <a href="https://wa.me/yourwhatsapplink" class="whatsapp-link">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-logo">
+    </a>
+      <p>Email: <a href="mailto:princeofpeaceacademy20@gmail.com">princeofpeaceacademy20@gmail.com</a></p>
             <p>Phone: +27 123 456 789</p>
         </div>
-    </section>
+</section>
+ <!-- Our Location Section -->
+<section id="location" class="location">
+    <h2>Our Location</h2>
+    <p>Find us at: 2nd floor, Madyaka building, 9208 NU2, Mdantsane Unit 5, Mdantsane, 5219.</p>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1724760994632!6m8!1m7!1sRkZWbUqmCYzZAm7nOOihtg!2m2!1d-32.93608340483501!2d27.73890078288764!3f29.422557050752665!4f-0.9560115206082713!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
 
-    <!-- Footer -->
+
    <!-- Footer -->
 <footer>
     <div class="social-links">
