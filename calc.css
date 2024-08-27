@@ -1,0 +1,111 @@
+/* Header */
+header {
+    background: #dda0dd; /* Lavender */
+    color: #fff; /* White text */
+    padding: 25px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Center nav links horizontally */
+    align-items: center; /* Align nav links vertically */
+    transition: background 0.3s ease;
+}
+
+header .nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+header .nav-links a {
+    color: white; /* Improved color for better readability */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header .nav-links a:hover {
+    color: black; /* Pink hover effect */
+}
+/* Estimated Cost Calculator Section */
+#cost-calculator {
+    margin-top: 60px; /* Space to avoid overlap with fixed header */
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+#cost-calculator h2 {
+    text-align: center;
+}
+
+#cost-calculator p {
+    text-align: center;
+    font-size: 1.2em; /* Increased font size */
+}
+
+.subject-section {
+    margin-bottom: 30px;
+}
+
+.subject-section h3 {
+    text-align: center;
+}
+
+.subject-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center; /* Center items horizontally */
+}
+
+.subject-grid div {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    gap: 5px;
+    width: 200px; /* Fixed width for alignment */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+}
+
+.subject-grid input[type="checkbox"] {
+    margin: 0;
+}
+
+.subject-grid label {
+    margin: 0;
+    color: #000;
+    font-weight: bold;
+}
+
+.subject-grid div:hover {
+    background-color: #e0bbe4; /* Hover color */
+}
+
+/* Total Cost Style */
+#cost-calculator p span {
+    font-size: 1.5em; /* Larger font size for better visibility */
+    color: #007bff; /* Blue color for rands */
+    font-weight: bold;
+}
+/* Banking Details */
+#banking-details {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+#banking-details h2 {
+    text-align: center;
+    color: #d8a8d6; /* Slightly pink */
+    font-size: 2em; /* Increase font size */
+    margin-bottom: 20px;
+}
+
+#banking-details p {
+    text-align: center;
+    font-size: 1.2em; /* Slightly larger font */
+    margin-bottom: 10px;
+    line-height: 1.6;
