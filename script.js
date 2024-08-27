@@ -1,10 +1,9 @@
-// JavaScript for fixed header and responsive navigation menu
-
 // Track the last scroll position
 let lastScrollTop = 0;
 const header = document.querySelector('header');
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
+const whatsappText = document.querySelector('.whatsapp-text'); // Select the "Our WhatsApp" text
 
 // Function to handle the header visibility
 function handleHeader() {
@@ -13,9 +12,15 @@ function handleHeader() {
     if (currentScroll > lastScrollTop) {
         // Scrolling down
         header.classList.add('scrolled');
+        if (whatsappText) {
+            whatsappText.style.transform = 'scale(0.9)'; // Slightly reduce the size when scrolling down
+        }
     } else {
         // Scrolling up
         header.classList.remove('scrolled');
+        if (whatsappText) {
+            whatsappText.style.transform = 'scale(1)'; // Reset size when scrolling up
+        }
     }
 
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For mobile or negative scrolling
@@ -38,5 +43,8 @@ window.addEventListener('resize', function() {
         // Reset styles if the screen is larger than 768px
         header.classList.remove('scrolled');
         navLinks.classList.remove('active');
+        if (whatsappText) {
+            whatsappText.style.transform = 'scale(1)'; // Reset size if resizing the window
+        }
     }
 });
