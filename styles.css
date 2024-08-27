@@ -11,14 +11,53 @@ body {
 /* Header */
 header {
     background: #dda0dd; /* Lavender */
-    color: #fff;
+    color: #fff; /* White text */
     padding: 10px 0;
-    position: fixed; /* Fixes the header at the top */
+    position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Ensure it stays on top of other content */
-    transition: none; /* Remove transition effects */
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Center nav links horizontally */
+    align-items: center; /* Align nav links vertically */
+    transition: none;
 }
+
+header .nav-links a {
+    color: #ffffff; /* Improved color for better readability */
+    transition: color 0.3s ease;
+}
+
+header .nav-links a:hover {
+    color: black; /* Pink hover effect */
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://z-p3-scontent.fcpt1-1.fna.fbcdn.net/v/t39.30808-6/294447557_462508249219726_5350583642401012709_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=qjNVVnr4QbcQ7kNvgFzLY49&_nc_zt=23&_nc_ht=z-p3-scontent.fcpt1-1.fna&_nc_gid=ASoaZ0a07zK5oVmBH5-Xrmn&oh=00_AYCo4KBs5M1DX9OKGkgwMStJrNnUm5URHyvMu4FB8WBgMA&oe=66D20A17') no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    color: #fff; /* White text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ff69b4; /* Pink text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Enhanced shadow for readability */
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    color: #ff69b4; /* Pink text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Enhanced shadow for readability */
+}
+
 
 header.scrolled {
     transform: none; /* Ensure no transformation */
@@ -58,6 +97,27 @@ header.scrolled {
     font-weight: bold;
     font-size: 1em; /* Adjust font size for visibility */
 }
+/* Style for the white circle around the WhatsApp text */
+.whatsapp-link {
+    display: inline-block;
+    padding: 10px 15px; /* Adjust padding to fit the circle around the text */
+    border: 2px solid #fff; /* White border */
+    border-radius: 50%; /* Makes the border circular */
+    background: Green; /* Background color inside the circle */
+    color: #000; /* Text color */
+    text-align: center;
+    font-weight: bold; /* Optional: to make the text bold */
+    text-decoration: none; /* Remove underline */
+    font-size: 1em; /* Adjust font size as needed */
+    line-height: 1.2; /* Adjust line height for vertical centering */
+}
+
+/* Optional: Adjust hover effect for better visibility */
+.whatsapp-link:hover {
+    background: #f0f0f0; /* Slightly different background color on hover */
+    border-color: #000; /* Change border color on hover */
+}
+
 
 /* Hero Section */
 .hero {
@@ -144,46 +204,127 @@ h2 {
     margin-bottom: 20px;
 }
 
+.brochure {
+    padding: 50px 20px;
+    text-align: center;
+}
+
 .brochure-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+/* Banking Details */
+#banking-details {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+#banking-details h2 {
+    text-align: center;
+    color: #d8a8d6; /* Slightly pink */
+    font-size: 2em; /* Increase font size */
+    margin-bottom: 20px;
+}
+
+#banking-details p {
+    text-align: center;
+    font-size: 1.2em; /* Slightly larger font */
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+/*Abou Us styles */
+.about {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif; /* Consistent font */
+    color: #333; /* Darker text for readability */
+}
+
+.about h2 {
+    font-size: 2em;
+    color: #C07CC4; /* Lavender color for headers */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.about h3 {
+    font-size: 1.5em;
+    color: #D6A1D7; /* Slightly lighter lavender for subheaders */
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.about p strong {
+    color: #C07CC4; /* Same lavender as the header */
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
 }
 
 /* Contact Us Section */
-.contact form {
-    margin: 20px auto;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
+.whatsapp-link {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    margin-top: 10px;
 }
 
-.contact form input, .contact form textarea {
-    padding: 10px;
+.whatsapp-logo {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-link:hover .whatsapp-logo {
+    transform: scale(1.1);
+}
+/* Our Location Section */
+.location {
+    background-color: #f8f8f8;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.location h2 {
+    color: #8b008b; /* Lavender */
+    font-size: 2.5rem;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
-.contact form button {
-    background: #ff69b4; /* Pink */
-    color: #fff;
-    padding: 10px;
+.location p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.map-container {
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
+    border-radius: 10px;
 }
 
-.contact form button:hover {
-    background-color: #ff1493; /* Darker Pink */
-}
-
-.contact-info p {
-    margin: 10px 0;
-}
 
 /* Footer */
 footer {
