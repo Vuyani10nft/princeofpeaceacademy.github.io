@@ -72,3 +72,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('enrollment-form');
+    const thankYouMessage = document.getElementById('thank-you-message');
+    
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+        // Use Formspree API to submit the form data here if necessary
+
+        // Show the thank you message
+        thankYouMessage.style.display = 'block';
+
+        // Optionally, hide the form
+        form.style.display = 'none';
+
+        // You can also submit the form data using JavaScript if needed
+        // For example, using fetch API or XMLHttpRequest to submit form data to Formspree
+    });
+});
