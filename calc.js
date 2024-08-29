@@ -60,13 +60,12 @@ function initializeSection(sectionSelector, totalSelector, subjects) {
 initializeSection('#fet-phase', '#fet-total', [
     'Mathematics', 'Math Literacy', 'Geography', 'Tourism', 'English Fal/HL', 'Economics', 
     'Physical Sciences', 'Technical Maths', 'Accounting', 'History', 'Business Studies',
-    'Natural Sciences', 'Life Sciences', 'EMS', 'Social Sciences', 'Technical Sciences'
+    'Life Sciences','Technical Sciences'
 ]);
 
 // Initialize GET Phase Subjects
 initializeSection('#get-phase', '#get-total', [
-    'Mathematics', 'Math Literacy', 'Geography', 'History', 'English', 
-    'Natural Sciences', 'Life Sciences', 'EMS', 'Social Sciences'
+    'Mathematics','English', 'Natural Sciences','EMS', 'Social Sciences'
 ]);
 
 // Initialize Extra Tuition Services
