@@ -24,12 +24,12 @@ header {
 }
 
 header .nav-links a {
-    color: #ffffff; /* Improved color for better readability */
+    color: #2b2b2b; /* Improved color for better readability */
     transition: color 0.3s ease;
 }
 
 header .nav-links a:hover {
-    color: black; /* Pink hover effect */
+    color: #ffffff; /* Pink hover effect */
 }
 
 /* Hero Section */
