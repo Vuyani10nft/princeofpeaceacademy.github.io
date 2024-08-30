@@ -114,7 +114,7 @@ header.scrolled {
 
 /* Optional: Adjust hover effect for better visibility */
 .whatsapp-link:hover {
-    background: #f0f0f0; /* Slightly different background color on hover */
+    background: green; /* Slightly different background color on hover */
     border-color: #000; /* Change border color on hover */
 }
 
