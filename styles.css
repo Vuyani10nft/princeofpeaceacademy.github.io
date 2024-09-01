@@ -32,18 +32,6 @@ header .nav-links a:hover {
     color: #ffffff; /* Pink hover effect */
 }
 
-/* Hero Section */
-.hero {
-    background: url('logo.jpg') no-repeat center center;
-    background-size: cover;
-    height: 60vh;
-    color: #fff; /* White text */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0 20px;
-}
 
 .hero-content h2 {
     font-size: 3em;
