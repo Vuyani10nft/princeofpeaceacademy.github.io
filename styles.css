@@ -34,7 +34,7 @@ header .nav-links a:hover {
 
 /* Hero Section */
 .hero {
-    background: url('POPlogo.jpg') no-repeat center center;
+    background: url('logo.jpg') no-repeat center center;
     background-size: cover;
     height: 60vh;
     color: #fff; /* White text */
