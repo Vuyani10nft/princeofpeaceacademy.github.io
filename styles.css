@@ -34,7 +34,7 @@ header .nav-links a:hover {
 
 /* Hero Section */
 .hero {
-    background: url('https://z-p3-scontent.fcpt1-1.fna.fbcdn.net/v/t39.30808-6/294447557_462508249219726_5350583642401012709_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=qjNVVnr4QbcQ7kNvgFzLY49&_nc_zt=23&_nc_ht=z-p3-scontent.fcpt1-1.fna&_nc_gid=ASoaZ0a07zK5oVmBH5-Xrmn&oh=00_AYCo4KBs5M1DX9OKGkgwMStJrNnUm5URHyvMu4FB8WBgMA&oe=66D20A17') no-repeat center center;
+    background: url('POPlogo.jpg') no-repeat center center;
     background-size: cover;
     height: 60vh;
     color: #fff; /* White text */
